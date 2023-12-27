@@ -33,7 +33,7 @@ def chromeBrowserOptions():
     else:
         # options.add_argument("--incognito")
         # this is for running in a docker container
-        user_data_dir = os.environ.get('CHROME_USER_DATA_DIR', '/home/user/chrome_data')
+        user_data_dir = os.environ.get('CHROME_USER_DATA_DIR', '/chrome_data')
         options.add_argument(f'--user-data-dir={user_data_dir}')
     return options
 

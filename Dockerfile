@@ -2,7 +2,7 @@ FROM python:3.12
 
 ENV PYTHONUNBUFFERED=1
 # Define where Chrome will store its user data
-ENV CHROME_USER_DATA_DIR=/home/user/chrome_data
+ENV CHROME_USER_DATA_DIR=/chrome_data
 
 RUN apt-get install -y chromium-driver chromium
 
