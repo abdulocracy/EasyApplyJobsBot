@@ -42,7 +42,7 @@ RUN mkdir /app && chmod -R 777 /app
 COPY . /app
 
 # Set read/write permissions for the data directory
-RUN chmod -R 777 /app/data
+RUN chmod -R 777 /app
 
 # Set the working directory
 WORKDIR /app
