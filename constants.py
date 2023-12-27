@@ -45,6 +45,8 @@ job_title_codes = {
     'Technical Director': "200",
     'Co-Founder': "103",
     'Data Analyst': "340",
+    'Business Analyst': "340",
+    'Business Analyst Intern': "22777",
     'Business Data Analyst': "6358",
     'Business Intelligence Consultant': "733",
     'Business Intelligence Analyst': "2336",
