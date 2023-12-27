@@ -1,10 +1,11 @@
 FROM python:3.12
 
-ENV PYTHONUNBUFFERED=1
 # Define where Chrome will store its user data
 ENV CHROME_USER_DATA_DIR=/chrome_data
+ENV PYTHONUNBUFFERED=1
 
-RUN apt-get install -y chromium-driver chromium
+RUN apt update
+RUN apt install -y chromium-driver chromium
 
 # Create symbolic links for the expected Google Chrome names to the Chromium executable
 RUN ln -s /usr/bin/chromium /usr/bin/google-chrome && \
