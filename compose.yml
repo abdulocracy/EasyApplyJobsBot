@@ -3,8 +3,6 @@ services:
     build: .
     volumes:
       - chrome_data:/chrome_data
-    environment:
-      - PYTHONUNBUFFERED=1
     command: python3 allConfigsRunner.py .
 
 volumes:
