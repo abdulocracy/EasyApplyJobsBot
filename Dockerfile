@@ -23,7 +23,7 @@ COPY . /app
 RUN chmod -R 777 /app
 
 # Install Python dependencies
-RUN pip install -r /requirements.txt
+RUN pip install -r /app/requirements.txt
 
 # Set the working directory
 WORKDIR /app
